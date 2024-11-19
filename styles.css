@@ -153,4 +153,139 @@
 
 .news-content::-webkit-scrollbar-thumb:hover {
     background: #999;
+}
+
+.tabs {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-button {
+    padding: 6px 12px;
+    border: none;
+    background: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.tab-button:hover {
+    background: #eee;
+}
+
+.tab-button.active {
+    background: #e7f5ff;
+    color: #228be6;
+}
+
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    padding: 12px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.todo-input-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.todo-input:focus {
+    border-color: #228be6;
+}
+
+.add-todo-btn {
+    padding: 8px 12px;
+    background: #228be6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-todo-btn:hover {
+    background: #1c7ed6;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.todo-item:hover {
+    background: #f1f3f5;
+}
+
+.todo-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 13px;
+    color: #495057;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #adb5bd;
+}
+
+.delete-todo {
+    visibility: hidden;
+    border: none;
+    background: none;
+    color: #fa5252;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.todo-item:hover .delete-todo {
+    visibility: visible;
+}
+
+.delete-todo:hover {
+    background: #fff5f5;
+    opacity: 1;
 } 
