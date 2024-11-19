@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tech News Tracker",
+  "version": "1.0",
+  "description": "Stay updated with the latest tech news from Hacker News",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {},
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+} 

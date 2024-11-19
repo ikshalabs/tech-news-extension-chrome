@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mission - Focus, Build, Thrive</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1b3c72, #2d91c2);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6f00;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        a:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+        .motivational {
+            text-align: left;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .motivational ul {
+            padding-left: 20px;
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        .motivational li {
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: auto;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ffe082;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+        .box h3 {
+            color: #ffe082;
+            margin-bottom: 15px;
+        }
+        .status-button {
+            background: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .status-button.off-track {
+            background: #f44336;
+        }
+        .floating-card {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: #1b3c72;
+            width: 300px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            display: none;
+        }
+        .floating-card:hover {
+            transform: translateY(-5px);
+        }
+        .floating-card h4 {
+            margin: 0 0 10px 0;
+            color: #2d91c2;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .status-on-track {
+            background-color: #4CAF50;
+        }
+        .status-off-track {
+            background-color: #f44336;
+        }
+        .floating-card-content {
+            margin-bottom: 15px;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #666;
+            background: none;
+            border: none;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+        }
+        .close-button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .toggle-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2d91c2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stay Unstoppable</h1>
+    <p>"Your vision has the power to shape industries, lives, and the future."</p>
+    
+    <div class="grid-container">
+        <div class="box">
+            <h3>What You Love ❤️</h3>
+            <p>Building AI systems that augment human capabilities and solve complex problems. Creating technology that makes a meaningful difference in healthcare.</p>
+        </div>
+        
+        <div class="box">
+            <h3>What the World Needs 🌍</h3>
+            <p>Accessible, efficient, and accurate healthcare solutions. AI systems that can help doctors make better decisions and improve patient outcomes.</p>
+        </div>
+        
+        <div class="box">
+            <h3>What You're Good At 🎯</h3>
+            <p>AI/ML Development, Healthcare Domain Knowledge, Strategic Planning, Team Building, and Product Development.</p>
+        </div>
+        
+        <div class="box">
+            <h3>What You Can Be Paid For 💰</h3>
+            <p>Developing AI healthcare solutions, consulting on ML implementations, creating scalable healthcare technology products.</p>
+        </div>
+    </div>
+
+    <p>Hitesh, every moment you focus, you create. Every action builds the future.</p>
+    <a href="https://docs.google.com/spreadsheets/d/1bk3QZ_vRZEqT091M_Ll-jniemyoBxeejwHwYIbITEi4/edit?gid=215129382#gid=215129382" target="_blank">
+        Open Your Mission Tracker
+    </a>
+    <footer>
+        &copy; 2024 Iksha Labs. <em>Your time is now.</em>
+    </footer>
+    <button class="toggle-popup" id="togglePopup">+</button>
+    <div class="floating-card" id="floatingCard">
+        <button class="close-button" onclick="togglePopup()">×</button>
+        <h4>Daily Mission Tracker</h4>
+        <div class="floating-card-content">
+            <p><strong>Today's Focus:</strong> AI Model Development</p>
+            <p><strong>Status:</strong> 
+                <span class="status-indicator" id="floatingStatusIndicator"></span>
+                <span id="floatingTrackingStatus">On Track</span>
+            </p>
+            <button id="floatingStatusToggle" class="status-button" onclick="toggleFloatingStatus()">
+                On Track
+            </button>
+        </div>
+    </div>
+    <script>
+        function toggleStatus() {
+            const button = document.getElementById('statusToggle');
+            const floatingButton = document.getElementById('floatingStatusToggle');
+            const statusText = document.getElementById('trackingStatus');
+            const floatingStatusText = document.getElementById('floatingTrackingStatus');
+            const indicator = document.getElementById('floatingStatusIndicator');
+            
+            const newStatus = button.textContent === 'On Track' ? 'Off Track' : 'On Track';
+            
+            button.textContent = newStatus;
+            statusText.textContent = newStatus;
+            
+            floatingButton.textContent = newStatus;
+            floatingStatusText.textContent = newStatus;
+            
+            if (newStatus === 'Off Track') {
+                button.classList.add('off-track');
+                floatingButton.classList.add('off-track');
+                indicator.classList.remove('status-on-track');
+                indicator.classList.add('status-off-track');
+            } else {
+                button.classList.remove('off-track');
+                floatingButton.classList.remove('off-track');
+                indicator.classList.add('status-on-track');
+                indicator.classList.remove('status-off-track');
+            }
+            
+            localStorage.setItem('trackingStatus', newStatus);
+        }
+
+        function toggleFloatingStatus() {
+            toggleStatus();
+        }
+
+        window.onload = function() {
+            const savedStatus = localStorage.getItem('trackingStatus') || 'On Track';
+            const button = document.getElementById('statusToggle');
+            const floatingButton = document.getElementById('floatingStatusToggle');
+            const statusText = document.getElementById('trackingStatus');
+            const floatingStatusText = document.getElementById('floatingTrackingStatus');
+            const indicator = document.getElementById('floatingStatusIndicator');
+            
+            button.textContent = savedStatus;
+            floatingButton.textContent = savedStatus;
+            statusText.textContent = savedStatus;
+            floatingStatusText.textContent = savedStatus;
+            
+            if (savedStatus === 'Off Track') {
+                button.classList.add('off-track');
+                floatingButton.classList.add('off-track');
+                indicator.classList.add('status-off-track');
+            } else {
+                indicator.classList.add('status-on-track');
+            }
+        }
+    </script>
+</body>
+</html>
